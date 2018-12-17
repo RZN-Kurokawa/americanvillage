@@ -1,0 +1,11 @@
+/* Heading
+--------------------------------------------------------------*/
+.c-heading_1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 68px 0 46px;
+  @include sp-screen {
+    margin: 20px 0 10px;
+  }
+}

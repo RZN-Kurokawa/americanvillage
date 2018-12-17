@@ -1,0 +1,98 @@
+/* reset
+--------------------------------------------------------------*/
+::-webkit-input-placeholder {
+  color: inherit;
+}
+:-moz-placeholder {
+  color: inherit;
+}
+button, input, select, textarea {
+  font: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  appearance: button;
+  &::-webkit-search-decoration {
+    display: none;
+  }
+  &::focus {
+    outline-offset: -2px;
+  }
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* Base
+--------------------------------------------------------------*/
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  @include sp-screen {
+    &.is_navbaropen{
+      overflow: hidden;
+    }
+  }
+}
+body {
+  background: $base_background;
+  min-width: $base_width;
+  font-family: $base_font;
+  font-size: $base_fontSize_pc;
+  line-height: $base_lineHeight_pc;
+  color: $font_color;
+  font-feature-settings: "palt";
+  @include sp-screen {
+    min-width: 0;
+    font-size: $base_fontSize_sp;
+    line-height: $base_lineHeight_sp;
+    &.is_navbaropen{
+      overflow: hidden;
+    }
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ::i-block-chrome, body {
+    font-feature-settings: "pkna";
+  }
+}
+@include sp-screen {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Link
+--------------------------------------------------------------*/
+a {
+  color: $link_color;
+  text-decoration: none;
+  &[href^="mailto:"] {
+    color: inherit;
+  }
+}
+/* テキスト選択
+--------------------------------------------------------------*/
+::selection {
+  color: #fff;
+  background: $accent_color;
+}
+::-moz-selection {
+  color: #fff;
+  background: $accent_color;
+}

@@ -1,0 +1,21 @@
+$base_background: #fff;
+$base_font: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, sans-serif;
+$base_width: 1152px;
+$base_fontSize_pc: 1.6rem;
+$base_fontSize_sp: 1.6rem;
+$base_lineHeight_pc: 1.5;
+$base_lineHeight_sp: 1.5;
+
+$content_width: 1024px;
+$font_color: #000;
+$link_color: #000;
+$link_color_hover: #000;
+$accent_color: #000;
+$hover_opacity: 0.7;
+
+//z-index 上＜下
+//z-index: z(hoge);
+$z-map: (
+	hero,
+	header
+);

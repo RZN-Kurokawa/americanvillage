@@ -1,0 +1,24 @@
+/* grid
+--------------------------------------------------------------*/
+.l-grid {
+  @include pc-screen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_3col {
+    @include pc-screen {
+      width: 31.3%;
+      &:nth-child(n+4) {
+        margin-top: 63px;
+      }
+      &:not(:nth-child(3n+1)) {
+        margin-left: 3.05%;
+      }
+    }
+    @include sp-screen {
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+  }
+}

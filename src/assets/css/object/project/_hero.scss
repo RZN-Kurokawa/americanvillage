@@ -1,0 +1,22 @@
+/* Hero
+--------------------------------------------------------------*/
+.p-hero {
+  position: relative;
+  z-index: z(hero);
+  &_lead {
+    position: absolute;
+    bottom: -49px;
+    right: -61px;
+    z-index: 1;
+    @include sp-screen {
+      top: 5%;
+      left: 4%;
+      bottom: auto;
+      right: auto;
+      width: 65.7%;
+    }
+    img {
+      vertical-align: bottom;
+    }
+  }
+}

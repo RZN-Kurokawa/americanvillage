@@ -1,0 +1,16 @@
+/* Footer
+--------------------------------------------------------------*/
+.l-footer {
+  background: #000;
+  color: #fff;
+  padding: 52px 0 51px;
+  @include sp-screen {
+    padding: 23px 0;
+  }
+  &_copy {
+    text-align: center;
+    @include sp-screen {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/* Top
+--------------------------------------------------------------*/
+.p-top {
+  &_lead {
+    font-size: 2.4rem;
+    margin: 12px 0;
+    @include sp-screen {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+}

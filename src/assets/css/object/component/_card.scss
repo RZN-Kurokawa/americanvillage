@@ -1,0 +1,46 @@
+/* Card
+--------------------------------------------------------------*/
+.c-card {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding-bottom: 58px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    box-shadow: -1px 13px 32px -8px rgba(0,0,0,.4);
+    &:after {
+      width: 70px;
+    }
+  }
+  &:before {
+    content: 'READ MORE';
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 32px;
+    right: 16px;
+    line-height: 1;
+  }
+  &:after {
+    content: '';
+    width: 16px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    transition: all .3s ease-in-out;
+  }
+  &_img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  &_body {
+    padding: 10px 16px;
+    min-height: 138px;
+  }
+  &_time {
+    display: block;
+    margin-bottom: 8px;
+  }
+}

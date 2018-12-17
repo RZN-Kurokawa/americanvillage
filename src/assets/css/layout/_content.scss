@@ -1,0 +1,19 @@
+/* Content
+--------------------------------------------------------------*/
+.l-content_narrow {
+  @include pc-screen {
+    width: $content_width;
+    margin: 0 auto;
+  }
+}
+.l-content_wide {
+  @include pc-screen {
+    width: $base_width;
+    margin: 0 auto;
+  }
+}
+.l-content_inner {
+  @include sp-screen {
+    padding: 0 30px;
+  }
+}
